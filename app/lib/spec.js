@@ -1,8 +1,8 @@
 'use strict';
 
 var express = require('express'),
-	paypal = require('paypal-rest-sdk'),
-	db = require('../lib/database');
+		paypal = require('paypal-rest-sdk'),
+		db = require('../lib/database');
 
 
 module.exports = function spec() {

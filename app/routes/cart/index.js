@@ -1,7 +1,7 @@
 'use strict';
 
 var Cart = require('../../../app/controllers/cart.server.controller'),
-		getBundle = require('../../../lib/getBundle');
+		getBundle = require('../../../app/lib/getBundle');
 
 module.exports = function (router) {
 

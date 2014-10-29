@@ -1,4 +1,5 @@
 'use strict';
+
 var bundle;
 var bundalo = require('bundalo');
 

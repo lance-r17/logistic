@@ -1,6 +1,6 @@
 'use strict';
 var Pay = require('../../../app/controllers/pay.server.controller.js'),
-		getBundle = require('../../../lib/getBundle');
+		getBundle = require('../../../app/lib/getBundle');
 
 
 module.exports = function (router) {
