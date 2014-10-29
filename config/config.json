@@ -25,7 +25,7 @@
   "bundle engine": "dust",
 
   "i18n": {
-    "contentPath": "path:./locales",
+    "contentPath": "path:./app/locales",
     "fallback": "en-US"
   },
 
