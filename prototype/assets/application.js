@@ -3724,6 +3724,8 @@ function(e) {
         t = $("body").height() - 200,
         n = $(window).height();
       t > n && (e > 100 ? $("#subHeader").addClass("fixed animated bounceInDown") : $("#subHeader").removeClass("fixed"))
+
+      sticky_relocate();
     });
     var e = $("#calloutStory > div").width(),
       t = e - ($("#calloutStory .type span").width() + 20);

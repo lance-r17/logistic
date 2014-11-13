@@ -22,8 +22,11 @@
   <!--[if IE]><link rel="SHORTCUT ICON" href="./assets/favicon.ico"/><![endif]-->
   <!--link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css"-->
 
+  <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.css" media="all">
   <link href="./assets/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="./assets/menu.css" media="screen" rel="stylesheet" type="text/css">
 
+  <script type="text/javascript" src="./assets/bootstrap/js/bootstrap.min.js"></script>
   <!--script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script-->
   <script src="./assets/modernizr-2.5.3.min.js" type="text/javascript"></script>
   <script type="text/javascript">
@@ -67,53 +70,294 @@
     </div>
   </header>
 
-  <div id="subHeader" class="animated bounceInDown">
-    <div>
-      <ul>
-        <li class="top current">
-          <a href="/">Most Popular</a>
-        </li>
+  <script>
+    function sticky_relocate() {
+      var window_top = $(window).scrollTop();
+      var div_top = $('#sticky-anchor').offset().top;
+      if (window_top > div_top) {
+          $('#ves-mainnav').addClass('stick');
+      } else {
+          $('#ves-mainnav').removeClass('stick');
+      }
+    }
 
-        <li class="latest ">
-          <a href="/recent">Recent</a>
-        </li>
+    $(function () {
+      $(window).scroll(sticky_relocate);
+      sticky_relocate();
+    });
+  </script>
 
-        <li class="category">
-          <a href="#">All Categories</a>
-          <ul>
-            <li>
-              <a href="/categories/crops">Crops</a>
-            </li>
-            <li>
-              <a href="/categories/livestock">Livestock</a>
-            </li>
-            <li>
-              <a href="/categories/markets">Markets</a>
-            </li>
-            <li>
-              <a href="/categories/agribusiness">Agribusiness</a>
-            </li>
-            <li>
-              <a href="/categories/science-and-technology">Science and Technology</a>
-            </li>
-            <li>
-              <a href="/categories/equipment">Equipment</a>
-            </li>
-            <li>
-              <a href="/categories/environment">Environment</a>
-            </li>
-            <li>
-              <a href="/categories/government-and-legislation">Government and Legislation</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+  <style>
+    #ves-mainnav.stick {
+      position: fixed;
+      top: 0;
+      z-index: 10000;
+      width: 100%;
+      /*border-radius: 0 0 0.5em 0.5em;*/
+    }
+  </style>
 
-      <a href="/articles/new" class="btn loginNeeded">I Want to Publish</a>
+  <!-- <div id="subHeader" class="animated bounceInDown"> -->
+    <div id="sticky-anchor"></div>
+    <section id="ves-mainnav">
+      <div class="container">
+        <div class="ves-megamenu">
+          <nav id="mainmenutop" class="navbar-inverse">
+            <div class="megamenu" role="navigation">
+              <div class="navbar">
+                <div class="collapse navbar-collapse navbar-ex1-collapse hidden-sm hidden-xs">
+                  <ul class="nav navbar-nav megamenu">
+                    <!-- menu item -->
+                    <li class=" parent dropdown aligned-fullwidth ">
+                      <a href="https://www.payporte.com/index.php/men.html" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="menu-title">Men</span><b class="caret"></b>
+                      </a>
+                      <div class="dropdown-menu" style="width:1170px">
+                        <div class="dropdown-menu-inner">
+                          <div class="row">
+                            <div class="mega-col col-sm-2 " data-widgets="wid-12" data-colwidth="2">
+                              <div class="mega-col-inner">
+                                <div class="ves-widget" id="wid-12">
+                                  <div class="menu-title">Clothing</div>
+                                  <div class="widget-category-list">
+                                    <div class="widget-inner">
+                                      <ul>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/clothings/jumpers-cardigans.html">
+                                            <span>Jumpers &amp; Cardigans</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/clothings/jeans.html">
+                                            <span>Jeans</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/clothings/shorts.html">
+                                            <span>Shorts</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/clothings/shirts.html">
+                                            <span>Shirts</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/clothings/hoodies-sweats.html">
+                                            <span>Hoodies &amp; Sweats</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/clothings/coats-jackets.html">
+                                            <span>Coats, Jackets &amp; Blazzers</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/clothings/t-shirts-vests.html">
+                                            <span>T-Shirts</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/clothings/trousers.html">
+                                            <span>Trousers</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/clothings/suits-blazers.html">
+                                            <span>Suits &amp; Blazers</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mega-col col-sm-2 " data-widgets="wid-14" data-colwidth="2">
+                              <div class="mega-col-inner">
+                                <div class="ves-widget" id="wid-14">
+                                  <div class="menu-title">Footwears</div>
+                                  <div class="widget-category-list">
+                                    <div class="widget-inner">
+                                      <ul>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/footwears/slippers.html">
+                                            <span>Slippers</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/footwears/sneakers.html">
+                                            <span>Sneakers</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/footwears/boots.html">
+                                            <span>Boots</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/footwears/corporates.html">
+                                            <span>Corporates</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/footwears/loafers.html">
+                                            <span>Loafers</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/footwears/moccasins.html">
+                                            <span>Moccasins</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mega-col col-sm-2 " data-widgets="wid-13" data-colwidth="2">
+                              <div class="mega-col-inner">
+                                <div class="ves-widget" id="wid-13">
+                                  <div class="menu-title">Accessories</div>
+                                  <div class="widget-category-list">
+                                    <div class="widget-inner">
+                                      <ul>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/accessories/swimwear.html">
+                                            <span>Swimwear</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/accessories/underwears.html">
+                                            <span>Underwears</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/accessories/wristwatches.html">
+                                            <span>Wristwatches</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/accessories/socks.html">
+                                            <span>Socks</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/accessories/neckties.html">
+                                            <span>Neckties</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/accessories/nightwear.html">
+                                            <span>Nightwear</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/accessories/belts.html">
+                                            <span>Belts</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/accessories/sun-glasses.html">
+                                            <span>Sun Glasses</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                          <a href="https://www.payporte.com/index.php/men/accessories/caps.html">
+                                            <span>Caps</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="mega-col col-sm-6 " data-widgets="" data-colwidth="6">
+                              <div class="mega-col-inner"></div>
+                            </div>
+                            <div class="mega-col col-sm-6 " data-widgets="wid-41|wid-60" data-colwidth="6">
+                              <div class="mega-col-inner">
+                                <div class="ves-widget" id="wid-41"></div>
+                                <div class="ves-widget" id="wid-60">
+                                  <div class="widget-html">
+                                    <div class="widget-inner">
+                                      <p>
+                                        <a href="https://www.payporte.com/index.php/men.html">
+                                          <img src="./images/menimage.png" alt="">
+                                        </a>
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
 
-      <div class="clearfix"></div>
-    </div>
-  </div>
+        <!-- <a href="/articles/new" class="btn loginNeeded">I Want to Publish</a> -->
+
+        <!-- <div class="clearfix"></div> -->
+      </div>
+    </section>
+  <!-- </div> -->
 
 
 
