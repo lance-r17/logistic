@@ -3773,7 +3773,7 @@ header form input[type="submit"] {
   position: absolute;
   right: 0;
   top: 5px;
-  background: url(../assets/searchIcon.png) no-repeat;
+  background: url(../assets/images/searchIcon.png) no-repeat;
   width: 14px;
   height: 14px
 }
@@ -3802,7 +3802,7 @@ header form input[type="submit"] {
   margin-left: 0
 }
 #subHeader li.category {
-  background: url(../assets/categoryArrow.png) no-repeat right 10px;
+  background: url(../assets/images/categoryArrow.png) no-repeat right 10px;
   padding-right: 20px
 }
 #subHeader .current a, #subHeader .current a:hover {
@@ -3873,9 +3873,9 @@ input.btn {
 #calloutStory {
   width: 100%;
   min-height: 247px;
-  background: url(../assets/agriculture42484.jpg) no-repeat;
-  filter: progid: dximagetransform.microsoft.alphaimageloader(src='../assets/agriculture42484.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/agriculture42484.jpg',sizingMethod='scale')";
+  background: url(../assets/images/agriculture42484.jpg) no-repeat;
+  filter: progid: dximagetransform.microsoft.alphaimageloader(src='../assets/images/agriculture42484.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../assets/images/agriculture42484.jpg',sizingMethod='scale')";
   background-size: cover;
   padding: 50px 0;
   color: #FFF;
@@ -3889,7 +3889,7 @@ input.btn {
   font-weight: 700;
   width: 100%;
   float: left;
-  background: url(../assets/calloutStoryLine.png) no-repeat right;
+  background: url(../assets/images/calloutStoryLine.png) no-repeat right;
   margin: 0 0 10px
 }
 #calloutStory h1 a {

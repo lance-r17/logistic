@@ -41,9 +41,9 @@ a:hover {
 #ves-mainnav .navbar-nav > li.dropdown > a > .caret {
   width: 5px;
   height: 5px;
-  background: url(../images/caret.png) center no-repeat;
+  background: url(./images/caret.png) center no-repeat;
   border: none;
-  margin-top: 1px;
+  margin-top: 4px;
   margin-right: 0px;
   margin-left: 10px;
   margin-left: 10px;
