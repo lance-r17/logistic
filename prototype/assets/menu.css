@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400);
+
 * {
   margin: 0;
   padding: 0;
@@ -61,12 +63,13 @@ a:hover {
 }
 /* line 264, ../sass/magento/_magento-module.scss */
 #ves-mainnav .navbar-nav > li > a {
-  font-size: 12px;
+  font-size: 18px;
+  font-weight: 700;
   display: block;
   line-height: 18px;
   text-decoration: none;
   float: left;
-  padding: 14px 16px;
+  padding: 18px 18px;
   color: white;
   text-transform: uppercase;
 }
@@ -120,12 +123,10 @@ a:hover {
 }
 /* line 315, ../sass/magento/_magento-module.scss */
 #ves-mainnav .navbar-nav > li .dropdown-menu a {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 30px;
   color: #515151;
   display: block;
-  line-height: 30px;
-  line-height: 30px;
 }
 /* line 319, ../sass/magento/_magento-module.scss */
 #ves-mainnav .navbar-nav > li .dropdown-menu a:hover {
@@ -179,8 +180,10 @@ a:hover {
 /* line 357, ../sass/magento/_magento-module.scss */
 #ves-mainnav .navbar-nav > li .mega-col-inner div.menu-title {
   text-transform: uppercase;
-  font-weight: bold;
   padding-bottom: 13px;
+  color: #e47911;
+  font-size: 18px;
+  font-weight: 700;
 }
 /* line 364, ../sass/magento/_magento-module.scss */
 #ves-mainnav .navbar-nav .menu-icon {
@@ -246,6 +249,11 @@ a:hover {
   padding: 4px 0 6px;
 }
 
+#ves-mainnav .widget-category-list .widget-inner ul.col-sm-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /******************************************************
  * @package Ves Theme Framework for Magento
  * @version 1.0
@@ -269,6 +277,10 @@ a:hover {
 /* ves mega menu */
 .ves-megamenu{
   position: relative; 
+  /*font-family: Microsoft YaHei;*/
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
 }
 
 .ves-megamenu .dropdown-menu > .dropdown-menu-inner {
