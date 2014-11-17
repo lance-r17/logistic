@@ -14,7 +14,7 @@ a:hover {
 
 #ves-mainnav .container {
 	/*width: 100%;*/
-	padding: 0;
+	/*padding: 0;*/
 }
 
 /* line 237, ../sass/magento/_magento-module.scss */
@@ -26,7 +26,7 @@ a:hover {
 #ves-mainnav .navbar-nav {
   float: none;
   line-height: 0;
-  margin: 0 30px;
+  /*margin: 0 30px;*/
 }
 /* line 241, ../sass/magento/_magento-module.scss */
 #ves-mainnav .navbar-nav > li {
@@ -254,6 +254,172 @@ a:hover {
   padding-right: 0;
 }
 
+/* Slideshow */
+/* line 449, ../sass/magento/_magento-module.scss */
+.ves-slideshow {
+  margin: 0 0 18px;
+}
+/* line 452, ../sass/magento/_magento-module.scss */
+.ves-slideshow .ves-caption {
+  border-style: none;
+  border-width: 0;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0;
+  text-shadow: none;
+  text-transform: uppercase;
+}
+/* line 465, ../sass/magento/_magento-module.scss */
+.ves-slideshow .ves-caption.normal-caption {
+  font-weight: 300;
+  color: #FFF;
+  font-family: "HelveticaNeue45Light", font-family-sans-serif, serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  text-align: center;
+  text-shadow: none;
+  text-transform: none;
+}
+/* line 479, ../sass/magento/_magento-module.scss */
+.ves-slideshow .ves-caption.big-caption {
+  color: #FFF;
+  font-size: 36px;
+  line-height: 36px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 40px;
+  background: url(../images/bulet-slide.png) top center no-repeat;
+}
+/* line 491, ../sass/magento/_magento-module.scss */
+.ves-slideshow .vescontentslider .carousel-control {
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 496, ../sass/magento/_magento-module.scss */
+.ves-slideshow .vescontentslider .carousel-control.left .fa {
+  position: relative;
+  left: -2px;
+}
+/* line 500, ../sass/magento/_magento-module.scss */
+.ves-slideshow .vescontentslider .carousel-control.right .fa {
+  position: relative;
+  right: -2px;
+}
+/* line 502, ../sass/magento/_magento-module.scss */
+.ves-slideshow .vescontentslider .carousel-control:hover {
+  color: #fff;
+  background: #F16439;
+}
+/* line 507, ../sass/magento/_magento-module.scss */
+.ves-slideshow .vescontentslider .carousel-indicators {
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+/* line 512, ../sass/magento/_magento-module.scss */
+.ves-slideshow .vescontentslider .carousel-indicators li {
+  display: inline-block;
+  float: none;
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+}
+/* line 518, ../sass/magento/_magento-module.scss */
+.ves-slideshow .vescontentslider .carousel-indicators li.active {
+  background: #F16439;
+  border: none;
+}
+
+/* Ves Vertical Menu */
+/* line 526, ../sass/magento/_magento-module.scss */
+.module_modecategory .block-content > p {
+  display: none;
+}
+
+/* line 528, ../sass/magento/_magento-module.scss */
+.sidebar #ves-verticalmenu .block-content {
+  padding: 0;
+  border: none;
+}
+
+/* line 532, ../sass/magento/_magento-module.scss */
+#ves-verticalmenu {
+  z-index: 999;
+}
+/* line 534, ../sass/magento/_magento-module.scss */
+#ves-verticalmenu .actions {
+  padding: 0 !important;
+}
+/* line 535, ../sass/magento/_magento-module.scss */
+#ves-verticalmenu .product-info {
+  line-height: 1.4;
+}
+/* line 536, ../sass/magento/_magento-module.scss */
+#ves-verticalmenu .block-title {
+  background: #F16439;
+  border: none;
+  line-height: 34px;
+  padding: 5px 10px 5px 18px;
+  padding: 5px 18px 5px 10px;
+  position: relative;
+  display: block;
+}
+/* line 33, ../sass/magento/_rtl.scss */
+.rtl #ves-verticalmenu .block-title {
+  padding: 5px 10px 5px 18px;
+}
+/* line 21, ../sass/bootstrap_lib/_mixins.scss */
+#ves-verticalmenu .block-title:before, #ves-verticalmenu .block-title:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 25, ../sass/bootstrap_lib/_mixins.scss */
+#ves-verticalmenu .block-title:after {
+  clear: both;
+}
+/* line 545, ../sass/magento/_magento-module.scss */
+#ves-verticalmenu .block-title span {
+  /*font-size: 17px;*/
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  float: left;
+}
+/* line 9, ../sass/magento/_rtl.scss */
+.rtl #ves-verticalmenu .block-title span {
+  float: right !important;
+}
+/* line 553, ../sass/magento/_magento-module.scss */
+#ves-verticalmenu .block-title span.shapes {
+  float: right;
+  float: right;
+}
+/* line 9, ../sass/magento/_rtl.scss */
+.rtl #ves-verticalmenu .block-title span.shapes {
+  float: left !important;
+}
+/* line 556, ../sass/magento/_magento-module.scss */
+#ves-verticalmenu .navbar {
+  position: static;
+  border-top: none;
+  background: white;
+  margin-bottom: 0px;
+}
+/* line 562, ../sass/magento/_magento-module.scss */
+#ves-verticalmenu .navbar .navbar-collapse {
+  padding: 0px 0px 0px 0px;
+}
+
 /******************************************************
  * @package Ves Theme Framework for Magento
  * @version 1.0
@@ -264,13 +430,17 @@ a:hover {
 /*Navigation default*/
 
 #ves-mainnav {
-  /*margin-bottom: 18px;*/
+  margin-bottom: 18px;
 }
 
-#ves-mainnav,
+#ves-mainnav.stick {
+  background-color: #48342a;
+}
+
 .navbar-inverse {
   /*background-color: #515151;*/
   background-color: #48342a;
+  border-color: transparent;
 }
 
 
@@ -365,6 +535,11 @@ a:hover {
 .ves-megamenu .aligned-fullwidth .dropdown-menu{
   width: 100%!important;
   left: 0;
+}
+
+/* line 129, ../sass/magento/_magento-module.scss */
+.category-left .block-content {
+  padding: 0px;
 }
 
 /*

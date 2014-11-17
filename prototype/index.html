@@ -23,10 +23,12 @@
   <!--link href="http://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css"-->
 
   <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.css" media="all">
+  <link rel="stylesheet" type="text/css" href="./assets/lush/css/lush.min.css" media="all">
   <link href="./assets/style.css" media="screen" rel="stylesheet" type="text/css">
   <link href="./assets/menu.css" media="screen" rel="stylesheet" type="text/css">
 
   <script type="text/javascript" src="./assets/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/lush/js/jquery.lush.min.js"></script>
   <!--script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script-->
   <script src="./assets/modernizr-2.5.3.min.js" type="text/javascript"></script>
   <script type="text/javascript">
@@ -1313,7 +1315,230 @@
   </section>
   <!-- </div> -->
 
+  <section id="ves-slideshow" class="ves-slideshow hidden-sm hidden-xs">
+    <div class="container">
+      <div class="row">
+        <div class="category-left col-lg-3 col-sm-3 col-xs-12">
+          <div class="block module_modecategory ">
+            <div class="block-content">
+              <p></p>
+              <div id="ves-verticalmenu" class="block ves-verticalmenu highlighted hidden-xs hidden-sm">
+                <div class="block-title">
+                  <span>Collections</span>
+                  <span class="shapes round">
+                    <em class="shapes bottom"></em>
+                  </span>
+                </div>
+                <div class="block-content">
+                  <div class="navbar navbar-inverse">
+                    <div id="verticalmenu" class="verticalmenu" role="navigation">
+                      <div class="navbar">
+                        <a href="javascript:;" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </a>
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                          <ul class="nav navbar-nav verticalmenu">
+                            <li class="">
+                              <a href="https://www.payporte.com/index.php/collections/sales.html">
+                                <span class="menu-icon" style="background:url('./media/ves_verticalmenu/s/a/sales_1.png') no-repeat;">
+                                  <span class="menu-title">Sales</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="https://www.payporte.com/index.php/collections/china-town.html">
+                                <span class="menu-icon" style="background:url('./media/ves_verticalmenu/c/h/china-town.png') no-repeat;">
+                                  <span class="menu-title">China Town</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="https://www.payporte.com/index.php/collections/tech-arena.html">
+                                <span class="menu-icon" style="background:url('./media/ves_verticalmenu/t/e/tech-arena.png') no-repeat;">
+                                  <span class="menu-title">Tech Arena</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="https://www.payporte.com/index.php/collections/thank-god-it-s-friday.html">
+                                <span class="menu-icon" style="background:url('./media/ves_verticalmenu/t/g/tgif-3.png') no-repeat;">
+                                  <span class="menu-title">Thank God It's Friday</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="https://www.payporte.com/index.php/collections/football.html">
+                                <span class="menu-icon" style="background:url('./media/ves_verticalmenu/f/o/football.png') no-repeat;">
+                                  <span class="menu-title">Football Season (2014/15)</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="https://www.payporte.com/index.php/collections/exclusive.html">
+                                <span class="menu-icon" style="background:url('./media/ves_verticalmenu/e/x/exclusive_1.png') no-repeat;">
+                                  <span class="menu-title">Exclusive</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="https://www.payporte.com/index.php/collections/back-to-school.html">
+                                <span class="menu-icon" style="background:url('./media/ves_verticalmenu/b/a/back-to-school.png') no-repeat;">
+                                  <span class="menu-title">Back To School</span>
+                                </span>
+                              </a>
+                            </li>
+                            <li class="">
+                              <a href="https://www.payporte.com/index.php/collections/clearance.html">
+                                <span class="menu-icon" style="background:url('./media/ves_verticalmenu/c/l/clearance_1.png') no-repeat;">
+                                  <span class="menu-title">Clearance</span>
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script type="text/javascript">
+              jQuery(window).ready(function() {
 
+                /*  Fix First Click Menu */
+                jQuery(document.body).on('click', '#verticalmenu [data-toggle="dropdown"]', function(event) {
+                  event.stopImmediatePropagation();
+                  jQuery(this).parent().show();
+                  if (!jQuery(this).parent().hasClass('open') && this.href && this.href != '#') {
+                    window.location.href = this.href;
+                  }
+
+                });
+                jQuery(document.body).on('dblclick', '#verticalmenu [data-toggle="dropdown"]', function(event) {
+                  event.stopImmediatePropagation();
+                  jQuery(this).parent().show();
+                  if (!jQuery(this).parent().hasClass('open') && this.href && this.href != '#') {
+                    window.location.href = this.href;
+                  }
+
+                });
+              });
+              </script>
+              <p></p>
+              <div class="clear clr"></div>
+            </div>
+          </div>
+        </div>
+        <div class="slideshow-right col-lg-9 col-sm-9 col-xs-12">
+
+          <div id="veslayerslider2" class="lush-slider  " style="height: 457px;">
+
+            <div class="lush" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <img src="./images/iPhone Promo_Site.png" style="top: 0%; left: 0%; width: 873px; height: 457px; position: absolute; font-size: 14px; line-height: 18px; padding: 0px; border: 0px none rgb(81, 81, 81); transition: all 500ms ease-out 0s; -webkit-transition: all 500ms ease-out 0s;" alt="image" class="out fade live">
+              <a href="#" class="out fade live" style="top: 0%; left: 0%; width: 873px; height: 457px; position: absolute; font-size: 14px; line-height: 18px; padding: 0px; border: 0px none rgb(119, 119, 119); transition: all 500ms ease-out 0s; -webkit-transition: all 500ms ease-out 0s;"></a>
+            </div>
+
+            <div class="lush" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <a href="#" style="top: -0.218818380743983%; left: 0%; position: absolute; font-size: 14px; line-height: 18px; padding: 0px; border: 0px none rgb(119, 119, 119); height: 457px; width: 873px; transition: all 500ms ease-out 0s; -webkit-transition: all 500ms ease-out 0s;" class="out fade live">
+                <img src="./images/GET-THE-LOOK.png" style=" width:873px; height:457px;">
+              </a>
+            </div>
+
+            <div class="lush" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <img src="./images/beats by dre design.png" style="top: 0%; left: 0%; width: 873px; height: 457px; position: absolute; font-size: 14px; line-height: 18px; padding: 0px; border: 0px none rgb(81, 81, 81); transition: all 500ms ease-out 0s; -webkit-transition: all 500ms ease-out 0s;" alt="image" class="out fade live">
+              <a href="#" target="_top" class="out fade live"></a>
+            </div>
+
+            <div class="lush active running" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <a href="#" class="in left live">
+                <img src="./images/The Rack Look.png" style=" width:873px; height:457px;">
+              </a>
+            </div>
+
+            <div class="lush" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <a href="#" style=" width:873px; height:457px;">
+              </a>
+            </div>
+
+            <div class="lush active running" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <a href="#" target="_top" class="in left live">
+                <img src="./images/Caps_Site Banner.png" style=" width:873px; height:100%;">
+              </a>
+            </div>
+
+            <div class="lush" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <img src="./images/TV.png" style="top: 0%; left: 0%; width: 873px; height: 457px; position: absolute; font-size: 14px; line-height: 18px; padding: 0px; border: 0px none rgb(81, 81, 81); transition: all 500ms ease-out 0s; -webkit-transition: all 500ms ease-out 0s;" alt="image" class="out fade live">
+              <a href="#" class="out fade live"></a>
+            </div>
+
+            <div class="lush active running" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <a href="#" class="in left live">
+                <img src="./images/kids2.png" style=" width:873px; height:457px;">
+              </a>
+            </div>
+
+            <div class="lush" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <a href="#" class="out fade live">
+                <img src="./images/lingerie-edit.png" style=" width:873px; height:457px;">
+              </a>
+            </div>
+
+            <div class="lush" data-deadtime="0" style="width: 873px; height: 457px; visibility: visible; display: block;">
+              <a href="#" class="out fade live">
+                <img src="./images/men-fash.png" style=" width:873px; height:457px;">
+              </a>
+            </div>
+            <div class="lush-nav" style="left: 0px; line-height: 0px;">
+              <a href="#" class="lush-prev fa fa-angle-left"></a>
+              <a href="#" class="lush-page" rel="1">1</a>
+              <a href="#" class="lush-page" rel="2">2</a>
+              <a href="#" class="lush-page" rel="3">3</a>
+              <a href="#" class="lush-page" rel="4">4</a>
+              <a href="#" class="lush-page" rel="5">5</a>
+              <a href="#" class="lush-page" rel="6">6</a>
+              <a href="#" class="lush-page current" rel="7">7</a>
+              <a href="#" class="lush-page" rel="8">8</a>
+              <a href="#" class="lush-page" rel="9">9</a>
+              <a href="#" class="lush-page" rel="10">10</a>
+              <a href="#" class="lush-next fa fa-angle-right"></a>
+            </div>
+            <div class="lush-shadow"></div>
+            <div class="lush-nav" style="left: 0px; line-height: 0px;">
+              <a href="#" class="lush-prev fa fa-angle-left"></a>
+              <a href="#" class="lush-page" rel="1">1</a>
+              <a href="#" class="lush-page" rel="2">2</a>
+              <a href="#" class="lush-page" rel="3">3</a>
+              <a href="#" class="lush-page" rel="4">4</a>
+              <a href="#" class="lush-page" rel="5">5</a>
+              <a href="#" class="lush-page current" rel="6">6</a>
+              <a href="#" class="lush-page" rel="7">7</a>
+              <a href="#" class="lush-page" rel="8">8</a>
+              <a href="#" class="lush-page" rel="9">9</a>
+              <a href="#" class="lush-page" rel="10">10</a>
+              <a href="#" class="lush-next fa fa-angle-right"></a>
+            </div>
+            <div class="lush-shadow"></div>
+          </div>
+
+          <script type="text/javascript">
+          jQuery(document).ready(function() {
+            // make sure to add the correct class for the mode
+            jQuery('#veslayerslider2').lush({
+
+              // PLUGIN OPTIONS
+              autostart: true // auto start plugin
+                ,
+              baseWidth: 873 // orignal slide widht
+                ,
+              baseHeight: 457 // and original slide height (ratio ~2.5)
+            });
+          });
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
   <script>
