@@ -13,7 +13,7 @@ a:hover {
 }
 
 #ves-mainnav .container {
-	width: 100%;
+	/*width: 100%;*/
 	padding: 0;
 }
 
@@ -66,10 +66,10 @@ a:hover {
   font-style: normal;
   font-variant: normal;
   display: block;
-  line-height: 26px;
+  line-height: 40px;
   text-decoration: none;
   float: left;
-  padding: 18px 18px;
+  padding: 0 18px;
   color: white;
   text-transform: uppercase;
 }
@@ -262,12 +262,12 @@ a:hover {
  * @license   GNU General Public License version 2
 *******************************************************/
 /*Navigation default*/
-/* line 10, ../sass/magento/_menu.scss */
+
 #ves-mainnav {
   /*margin-bottom: 18px;*/
 }
 
-/* line 13, ../sass/magento/_menu.scss */
+#ves-mainnav,
 .navbar-inverse {
   /*background-color: #515151;*/
   background-color: #48342a;
