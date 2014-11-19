@@ -1,0 +1,69 @@
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+
+.carousel .container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.carousel-control {
+  /*background-color: transparent;*/
+  visibility: hidden;
+  background-color: rgba(0,0,0,0.2);
+  border: 0;
+  font-size: 48px;
+  margin-top: 0;
+  /*text-shadow: 0 1px 1px rgba(0,0,0,.4);*/
+  text-shadow: none;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 64px;
+  line-height: 64px;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+.carousel:hover .carousel-control {
+  visibility: visible;
+}
+
+.carousel-control.left, 
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control i {
+  line-height: 64px;
+}
+
+/*.carousel .item {
+  height: 500px;
+}
+.carousel img {
+  min-width: 100%;
+  height: 500px;
+}
+*/
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 100%;
+  padding: 0 8%;
+  margin-bottom: 12%;
+}
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn {
+  margin-top: 10px;
+}
