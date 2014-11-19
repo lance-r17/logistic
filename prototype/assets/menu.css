@@ -39,14 +39,15 @@ a:hover {
 }
 /* line 245, ../sass/magento/_magento-module.scss */
 #ves-mainnav .navbar-nav > li.dropdown > a > .caret {
-  width: 5px;
+  /*width: 5px;
   height: 5px;
   background: url(./images/caret.png) center no-repeat;
   border: none;
   margin-top: 4px;
   margin-right: 0px;
   margin-left: 10px;
-  margin-left: 10px;
+  margin-left: 10px;*/
+  font-size: 12px;
 }
 /* line 20, ../sass/magento/_rtl.scss */
 .rtl #ves-mainnav .navbar-nav > li.dropdown > a > .caret {
@@ -73,6 +74,11 @@ a:hover {
   color: white;
   text-transform: uppercase;
 }
+
+#ves-mainnav .navbar-nav > li.list-head {
+  background-color: rgba(0,0,0,.1);
+}
+
 /* line 277, ../sass/magento/_magento-module.scss */
 #ves-mainnav .navbar-nav > li.parent a {
   position: relative;
@@ -438,6 +444,17 @@ a:hover {
   width: 100%;
 }
 
+/* Layer Slider */
+/* line 700, ../sass/magento/_magento-module.scss */
+.lush-slider {
+  background: none;
+  border: none;
+  padding: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+
 /******************************************************
  * @package Ves Theme Framework for Magento
  * @version 1.0
@@ -449,15 +466,23 @@ a:hover {
 
 #ves-mainnav {
   margin-bottom: 18px;
+  /*background-color: #7bc25c;*/
 }
 
 #ves-mainnav.stick {
-  background-color: #48342a;
+  /*background-color: #48342a;*/
+  background-color: #7bc25c;
+  /*background-color: rgba(123,194,92,.9);*/
+}
+
+#ves-mainnav.stick .navbar-inverse {
+  /*background-color: transparent;*/
 }
 
 .navbar-inverse {
   /*background-color: #515151;*/
-  background-color: #48342a;
+  /*background-color: #48342a;*/
+  background-color: #7bc25c;
   border-color: transparent;
 }
 
